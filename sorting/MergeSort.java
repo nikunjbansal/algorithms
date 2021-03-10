@@ -28,7 +28,7 @@ public class MergeSort extends BaseSort{
     private void merge(List<Integer> array, int l, int m, int r) {
         
         // merge 2 lists by picking one element from both and comparing
-        // list 1 = array[l...m+1]
+        // list 1 = array[l...m]
         // list 2 = array[m+1...r]
         ArrayList<Integer> first = new ArrayList<>(array.subList(l, m));    
         ArrayList<Integer> second = new ArrayList<>(array.subList(m, r)); 
