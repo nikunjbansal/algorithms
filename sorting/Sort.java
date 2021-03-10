@@ -13,10 +13,11 @@ public class Sort {
         }
 
         BaseSort bubble = new BubbleSort(numbers);
-        List<Integer> sorted = bubble.sort();
-        for(int i: sorted) {
-            System.out.println(i);
-        }
+        bubble.sort();
+        bubble.print();
 
+        BaseSort merge = new MergeSort(numbers);
+        merge.sort();
+        merge.print();
     }
 }
